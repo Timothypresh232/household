@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                fontFamily:{
+            jim: ['Jim Nightshade','cursive'],
+            Poppins: ['Poppins', 'sans-serif'],
+            roboto: ['Roboto', 'sans-serif']
+          }
+        },
+        colors: {
+          bgcolor:'#f9d370',
+        }
+            }
+        }
+      </script>
+        <style type="text/tailwindcss">
+            @layer utilities {
+              .content-auto {
+                content-visibility: auto;
+              }
+            }
+          </style>
+</head>
+<body>
+    <div>
+        <nav class="flex items-center py-4 bg-bgcolor lg:px 28 md:px-16 px-8 justify-between">
+            <div class="flex gap-3 items-center">
+                <img class="w-14" src="image/image 5.png" alt="">
+                <p class=" text-[25px] font-bold ">BRAND NAME</p>
+            </div>
+            <div class="items-center  gap-10 lg:flex md:flex hidden">
+                <ul class="flex items-center gap-10">
+                    <li>HOME</li>
+                    <li>STORE</li>
+                    <li>ACCESSORIES</li>
+                    <li>BRAND</li>
+                    <li>PAGES</li>
+                    <li>ABOUTU</li>
+                    <li>NEWS</li>
+                </ul>
+            </div>
+            <div>
+                <p>CONTACT US</p>
+            </div>
+        </nav>
+        <div class="flex justify-center py-10  ">
+            <img class="z-10 w-[20px] h-[20px] relative right-[180px] top-4" src="image/Vector (9).png" alt="">
+            <input class=" absolute z-0 border-2 border-black pl-10 pr-32 rounded-full lg:w-[516px] md:w-[416px] w-[316px] h-[43px]" type=" text">
+            <button class=" bg-[#4C8787] h-[33px] w-[100px] rounded-full text-white relative lg:left-[185px] top-1 md:left-[135px] left-[85px] hover:transition hover:scale-105 duration-300 hover:bg-bgcolor">Search</button>
+        </div>
+    </div>
+
+    <div class="bg-bgcolor flex pt-10 px-20">
+        <div class="lg:w-1/2 md:w-full w-full flex items-center">
+            <img class="w-[594px] h-[399px]" src="image/image 2 (2).png" alt="">
+        </div>
+        <div class="lg:w-1/2 grid  items-center md:w-full w-full ">
+            <div>
+                <p class="text-[22px] font-bold font-roboto">HOT DEALS THIS WEEK</p>
+                <p class="text-[48px] w-[500px] text-[#A86A3D] text-center font-bold font-roboto">SALE 50% OFF MODERN FURNITURE</p>
+            </div>
+            <button class="w-[124px] h-[50px] bg-[#4C8787]">VIEW NOW</button>
+            <img class="w-[100px] h-[10px]" src="image/Group 223.png" alt="">
+        </div>  
+    </div> 
+    
+    <div class="lg:px-16 md:px-10 px-8 lg:flex py-10 lg:gap-10 md:gap-10 gap-5 md:grid grid items-center justify-center">
+        <div class="bg-[#FAFAFA] lg:w-1/2 md:w-full w-full lg:flex md:flex grid items-center justify-center">
+            <img class="w-[283px] h-[283px]" src="image/image 3.png" alt="">
+            <div class="grid gap-12">
+                <p class="text-[28px] font-roboto font-bold">INY VINTAGE CHAIR</p>
+                <button class="w-[124px] h-[48px] bg-[#4C8787]">VIEW DETAILS</button>
+            </div>
+        </div>
+        <div class=" lg:w-1/2 bg-[#EAE9E7] px-5 lg:pb-0 md:pb-0 pb-5 md:w-full w-full lg:flex md:flex grid items-center justify-center">
+            <img class="w-[253px] h-[283px]" src="image/image 4.png" alt="">
+            <div class="grid gap-12">
+                <p class="text-[28px] font-roboto font-bold">LARGE TERRACOTA VASE</p>
+                <button class="w-[124px] h-[48px] bg-[#4C8787]">VIEW DETAILS</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid justify-center items-center">
+        <div  class="grid lg:grid-cols-4 lg:px-10 gap-10 md:px-10 px-8 grid-cols-1 md:grid-cols-2">
+            <div class="grid items-center">
+                <div class="w-[280px] h-[435px] bg-no-repeat bg-cover" style="background-image: url(image/Rectangle\ 5.png);">
+                    <div class="w-[280px] h-[435px] bg-no-repeat bg-cover" style="background-image: url(image/Rectangle\ 40\ \(2\).png);">
+                        <div class="grid gap-4 px-10 py-[120px] text-[#ffff]">
+                            <p class="font-roboto text-[24px]">DECOR</p>
+                            <p class="font-roboto w-[210px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div>
+                                <button class="w-[124px] h-[48px] bg-[#4C8787]">VIEW ALL</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[280px] h-[400px] grid gap-5">
+                <img class="w-[280px] h-[350px]" src="image/Rectangle 6.png" alt="">
+                <div>
+                    <p class="font-roboto font-bold">Linen Beach Towel</p>
+                    <img class="w-[100px] h-[20px]" src="image/Group 10 (1).png" alt="">
+                </div>
+                <div class="flex items-center gap-3">
+                    <p class="font-roboto text-[24px] font-bold">30$</p>
+                    <img class="w-[100px] h-[20px]" src="image/Group 10.png" alt="">
+                </div>
+            </div>
+            <div class="w-[280px] h-[400px] grid gap-5">
+                <img class="w-[280px] h-[350px]" src="image/Rectangle 7.png" alt="">
+                <div>
+                    <p class="font-roboto font-bold">Square Clear Glass Box</p>
+                    <img class="w-[100px] h-[20px]" src="image/Group 10 (1).png" alt="">
+                </div>
+                <div class="flex items-center gap-5">
+                    <p class="font-roboto text-[24px] font-bold">30$</p>
+                    <img class="w-[100px] h-[20px]" src="image/Group 10.png" alt="">
+                </div>
+            </div>
+            <div class="w-[280px] h-[400px] grid gap-5">
+                <img class="w-[280px] h-[350px]" src="image/Rectangle 8.png" alt="">
+                <div>
+                    <p class="font-roboto font-bold">4-pack Small Ceramic Plates</p>
+                    <img class="w-[100px] h-[20px]" src="image/Group 10 (1).png" alt="">
+                </div>
+                <div class="flex items-center gap-5">
+                    <p class="font-roboto text-[24px] font-bold">30$</p>
+                    <img class="w-[100px] h-[20px]" src="image/Group 10.png" alt="">
+                </div>
+            </div>
+            <div class="w-[280px] h-[400px] grid gap-5">
+                <img class="w-[280px] h-[350px]" src="image/Rectangle 10.png" alt="">
+                <div>
+                    <p class="font-roboto font-bold">Large Clear Glass Box </p>
+                    <img class="w-[100px] h-[20px]" src="image/Group 10 (1).png" alt="">
+                </div>
+                <div class="flex items-center gap-5">
+                    <p class="font-roboto text-[24px] font-bold">30$</p>
+                    <img class="w-[100px] h-[20px]" src="image/Group 10.png" alt="">
+                </div>
+            </div>
+            <div class="w-[280px] h-[400px] grid gap-5">
+                <img class="w-[280px] h-[350px]" src="image/Rectangle 11.png" alt="">
+                <div>
+                    <p class="font-roboto font-bold">Round Jute Placemat</p>
+                    <img class="w-[100px] h-[20px]" src="image/Group 10 (1).png" alt="">
+                </div>
+                <div class="flex items-center gap-5">
+                    <p class="font-roboto text-[24px] font-bold">30$</p>
+                    <img class="w-[100px] h-[20px]" src="image/Group 10.png" alt="">
+                </div>
+            </div>
+            <div class="w-[280px] h-[400px] grid gap-5">
+                <img class="w-[280px] h-[350px]" src="image/Rectangle 12.png" alt="">
+                <div>
+                    <p class="font-roboto font-bold">Metal Wire Basket</p>
+                    <img class="w-[100px] h-[20px]" src="image/Group 10 (1).png" alt="">
+                </div>
+                <div class="flex items-center gap-5">
+                    <p class="font-roboto text-[24px] font-bold">30$</p>
+                    <img class="w-[100px] h-[20px]" src="image/Group 10.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="w-[280px] h-[435px] bg-no-repeat bg-cover" style="background-image: url(image/Rectangle\ 9.png);">
+                    <div class="w-[280px] h-[435px] bg-no-repeat bg-cover" style="background-image: url(image/Rectangle\ 40\ \(2\).png);">
+                        <div class="grid gap-4 px-10 py-[120px] text-[#ffff]">
+                            <p class="font-roboto text-[24px]">BOHO CHIC</p>
+                            <p class="font-roboto w-[210px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div>
+                                <button class="w-[124px] h-[48px] border-2">VIEW ALL</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="flex py-20">
+    <div class="w-[100%] h-[420px] bg-no-repeat bg-cover" style="background-image: url(image/Rectangle\ 13\ \(1\).png);">
+        <div class="w-[35%] h-[300px] bg-no-repeat bg-cover px-20 py-10 relative top-[70px] left-[150px]" style="background-image: url(image/Rectangle\ 41.png);">
+            <div class="grid gap-2">
+                <p class="text-[#323334] text-[28px] font-bold">BEDSHEET SETS</p>
+            <div class="flex items-center gap-5">
+                <p class="text-[28px] font-roboto font-bold text-[#7B5136]">$50.00</p>
+                <p class="font-bold font-roboto text-[#7B5136]">$220.00</p>
+            </div>
+            <div class="grid gap-10">
+                <p class="text-[#7B5136]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <button  class="relative left-[85px] text-[#ffff] w-[120px] h-[45px] bg-[#4C8787] border-2 border-[#ffff]">VIEW DETAILS</button>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="px-10">
+    <p class="text-[34px] font-bold font-roboto">TOP RATING</p>
+</div>
+
+
+<div class="grid lg:grid-cols-3 lg:px-10 gap-10 md:px-10 px-8 grid-cols-1 md:grid-cols-2" >
+    <div class="flex gap-10">
+        <div>
+            <img class="w-[198px] h-[309px]" src="image/Rectangle 26.png" alt="">
+        </div>
+        <div class="relative top-20">
+            <div>
+                <p>Tray</p>
+                <p>with Foot</p>
+                <img class="w-[100px] h-[20px]" src="image/Group 10 (1).png" alt="">
+            </div>
+            <div>
+                <p class="font-roboto text-[24px] font-bold">30$</p>
+                <img class="w-[100px] h-[20px]" src="image/Group 10.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex gap-10">
+        <div>
+            <img class="w-[198px] h-[309px]" src="image/Rectangle 27.png" alt="">
+        </div>
+        <div class="relative top-20">
+            <div>
+                <p>Tray</p>
+                <p>with Foot</p>
+                <img class="w-[100px] h-[20px]" src="image/Group 10 (1).png" alt="">
+            </div>
+            <div>
+                <p class="font-roboto text-[24px] font-bold">30$</p>
+                <img class="w-[100px] h-[20px]" src="image/Group 10.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex gap-10">
+        <div>
+            <img class="w-[198px] h-[309px]" src="image/Rectangle 28.png" alt="">
+        </div>
+        <div class="relative top-20">
+            <div>
+                <p>Tray</p>
+                <p>with Foot</p>
+                <img class="w-[100px] h-[20px]" src="image/Group 10 (1).png" alt="">
+            </div>
+            <div>
+                <p class="font-roboto text-[24px] font-bold">30$</p>
+                <img class="w-[100px] h-[20px]" src="image/Group 10.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex gap-10">
+        <div>
+            <img class="w-[198px] h-[309px]" src="image/Rectangle 29.png" alt="">
+        </div>
+        <div class="relative top-20">
+            <div>
+                <p>Tray</p>
+                <p>with Foot</p>
+                <img class="w-[100px] h-[20px]" src="image/Group 10 (1).png" alt="">
+            </div>
+            <div>
+                <p class="font-roboto text-[24px] font-bold">30$</p>
+                <img class="w-[100px] h-[20px]" src="image/Group 10.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex gap-10">
+        <div>
+            <img class="w-[198px] h-[309px]" src="image/Rectangle 33.png" alt="">
+        </div>
+        <div class="relative top-20">
+            <div>
+                <p>Tray</p>
+                <p>with Foot</p>
+                <img class="w-[100px] h-[20px]" src="image/Group 10 (1).png" alt="">
+            </div>
+            <div>
+                <p class="font-roboto text-[24px] font-bold">30$</p>
+                <img class="w-[100px] h-[20px]" src="image/Group 10.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex gap-10">
+        <div>
+            <img class="w-[198px] h-[309px]" src="image/Rectangle 34.png" alt="">
+        </div>
+        <div class="relative top-20">
+            <div>
+                <p>Tray</p>
+                <p>with Foot</p>
+                <img class="w-[100px] h-[20px]" src="image/Group 10 (1).png" alt="">
+            </div>
+            <div>
+                <p class="font-roboto text-[24px] font-bold">30$</p>
+                <img class="w-[100px] h-[20px]" src="image/Group 10.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex gap-10">
+        <div>
+            <img class="w-[198px] h-[309px]" src="image/Rectangle 30.png" alt="">
+        </div>
+        <div class="relative top-20">
+            <div>
+                <p>Tray</p>
+                <p>with Foot</p>
+                <img class="w-[100px] h-[20px]" src="image/Group 10 (1).png" alt="">
+            </div>
+            <div>
+                <p class="font-roboto text-[24px] font-bold">30$</p>
+                <img class="w-[100px] h-[20px]" src="image/Group 10.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex gap-10">
+        <div>
+            <img class="w-[198px] h-[309px]" src="image/Rectangle 31.png" alt="">
+        </div>
+        <div class="relative top-20">
+            <div>
+                <p>Tray</p>
+                <p>with Foot</p>
+                <img class="w-[100px] h-[20px]" src="image/Group 10 (1).png" alt="">
+            </div>
+            <div>
+                <p class="font-roboto text-[24px] font-bold">30$</p>
+                <img class="w-[100px] h-[20px]" src="image/Group 10.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex gap-10">
+        <div>
+            <img class="w-[198px] h-[309px]" src="image/Rectangle 32.png" alt="">
+        </div>
+        <div class="relative top-20">
+            <div>
+                <p>Tray</p>
+                <p>with Foot</p>
+                <img class="w-[100px] h-[20px]" src="image/Group 10 (1).png" alt="">
+            </div>
+            <div>
+                <p class="font-roboto text-[24px] font-bold">30$</p>
+                <img class="w-[100px] h-[20px]" src="image/Group 10.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex justify-center py-[50px]">
+    <button class="w-[273px] h-[57px] bg-[#4C8787]">LOAD MORE</button>
+</div>
+
+<div class="flex justify-between items-center px-10 gap-10">
+    <div>
+        <p class="text-[28px] font-bold font-roboto">SING UP FOR OUR NEWSLETTER</p>
+        <p class="font-roboto">Subscribe for the latest Deals and promotions</p>
+    </div>
+    <div class="flex">
+        <input class="w-[515px] h-[50px] border-2" placeholder="Enter your email address" type="text">
+        <img class="w-[21px] h-[16px] bg-[#4C8787]" src="image/Vector (10).png" alt="">
+    </div>
+</div>
+
+
+<div class="flex justify-center bg-[#0A032A]">
+    <div class="flex gap-10 py-10 px-20 font-roboto">
+    <div class="grid gap-3">
+        <p class="text-[28px] text-[#ffff] text-[28px] font-roboto">BRAND</p>
+        <P class="w-[316px] text-[#FFFFFF80]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</P>
+        <div class="text-[#FFFF]">
+            <p>121 king street, Melbourne 3000</p>
+            <p>+12 3 0000 0000</p>
+            <p>contact@brandemail.com</p>
+        </div>
+    </div>
+    <div class="grid">
+    <div class="text-[#ffff] text-[28px] font-roboto">
+        <p>SHOPPING</p>
+    </div>
+    <div class="text-[#FFFFFF80]">
+        <p>Your Cart</p>
+        <p>Your order</p>
+        <p>Compared items</p>
+        <p>Wishlist items</p>
+        <p>Shopping etails</p>
+    </div>
+    </div>
+        <div class="grid gap-2">
+            <p class="text-[#FFFF] text-[28px] font-roboto">MORE LINK</p>        
+        <div class="text-[#FFFFFF80]">
+            <p>Blog</p>
+            <p>Gift center</p>
+            <p>Buying Guides</p>
+            <p>New Arrival</p>
+            <p>Clearance</p>
+        </div>
+    </div>
+
+    <div class="grid gap-3">
+        <div class="text-[#FFFF] text-[28px] font-roboto">
+            <p>PROMO UPDATES</p>
+        </div>
+        <div class=" grid text-[#FFFFFF80] gap-3">
+            <p>14 May</p>
+            <p class="w-[312px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>3 comments</p>
+            <p>15 May</p>
+            <p class="w-[312px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>10 comment</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="flex justify-center bg-[#050019]">
+    <p class="text-[#FFFFFF80]">Brand Registered Name © – All rights reserved </p>
+</div>
+
+</div>
+</div>
+</body>
+</html>
